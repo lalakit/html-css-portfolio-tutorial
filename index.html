@@ -6,6 +6,7 @@
         <title>My portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mediaqueries.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     </head>
     <body>
         <nav id = "desktop-nav">
@@ -75,7 +76,7 @@
             <p class="section__text__p1">Get To Know More</p>
             <h1 class="title">About Me</h1>
             <div class="section-container">
-                <div class="section__pic-contairner">
+                <div class="section__pic-container">
                     <img 
                     src="./assets/picaboutme.jpg" 
                     alt="Profile picture"
@@ -85,7 +86,7 @@
                 <div class="about-details-container">
                     <div class="about-containers">
                         <div class="details-container">
-                            <img src="" 
+                            <img src="./assets/experience(1).png" 
                             alt="experience icon"
                             class="icon"
                             />
@@ -93,7 +94,7 @@
                             <p>3+ years <br/>Data Analyst</p>
                         </div>
                         <div class="details-container">
-                            <img src="" 
+                            <img src="./assets/graduation.png" 
                             alt="education icon"
                             class="icon"
                             />
@@ -106,10 +107,17 @@
                     </div>
                 </div>
             </div>
-            <img src="" 
-            alt="arrow"
-            class="icon arrow"
-            onclick="location.href='./#experience'">
+            <div id="animated-logo"></div>
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container : document.getElementById('animated logo'),
+                    Path : 'down-arrow.js',
+                    render : 'svg',
+                    loop : true,
+                    autoplay : true,
+                    name : 'demo animation'
+                })     
+            </script>         
         </section>
         <section id="experience">
             <p class="section__text__p1">Explore My</p>
@@ -120,7 +128,7 @@
                         <h2 class="experience-sub-title">Frontend Development</h2>
                         <div class="article-container">
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                             <div>
@@ -129,7 +137,7 @@
                             </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                                 <div>
@@ -138,7 +146,7 @@
                                 </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                             <div>
@@ -147,7 +155,7 @@
                             </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                                 <div>
@@ -160,7 +168,7 @@
                         <h2 class="experience-sub-title">Back Development</h2>
                         <div class="article-container">
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                             <div>
@@ -169,7 +177,7 @@
                             </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                                 <div>
@@ -178,7 +186,7 @@
                                 </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                             <div>
@@ -187,7 +195,7 @@
                             </div>
                             </article>
                             <article>
-                                <img src="" alt="experience icon"
+                                <img src="./assets/growing.png" alt="experience icon"
                                 class="icon"
                                 />
                                 <div>

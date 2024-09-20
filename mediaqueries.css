@@ -32,10 +32,11 @@
       margin :0 5%;
    }
    .section__pic-container{
-      width:27px;
-      height:27px;
+      width:23px;
+      height:23px;
       margin:0 auto 2rem;
    }
+
    .about-containers {
       margin-top: 0;
    }
@@ -68,10 +69,8 @@
       font-size: 1rem;
 
    }
-
    .experience-sub-title {
       font-size:1.25rem;
-
    }
    .logo {
       font-size: 1.5rem;

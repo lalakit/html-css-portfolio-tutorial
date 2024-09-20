@@ -88,7 +88,6 @@ a:hover {
     transition: all 0.3 ease-in-out ;
 
 }
-
 .menu-links {
     position: absolute;
     top: 100%;
@@ -99,7 +98,6 @@ a:hover {
     width: fit-content;
     transition: all 0.3 ease-in-out ;
 }
-
 .menu-links a {
 display: black;
 padding: 10px;
@@ -112,11 +110,9 @@ transition: all 0,3 ease-in-out;
 .menu-links li {
     list-style: none;
 }
-
 .menu-links.open {
     max-height: 300px;
 }
-
 .hamburger-icon.open span :first-child {
     transform: rotate(45deg) translate(10px,5px);
 }
@@ -273,7 +269,7 @@ border :rgb(255,255,255) 0.1rem solid;
     border-radius: 2rem;
 }
 
-.arrow{
+#animate-logo{
     position: absolute;
     right : -5rem;
     bottom: 2.5rem;
@@ -293,7 +289,7 @@ border :rgb(255,255,255) 0.1rem solid;
     height: 80%;
 
 }
-.section__pic__container {
+.section__pic-container {
     height:400px;
     width:400px;
     margin:auto 0;
@@ -335,8 +331,9 @@ article{
     gap:0.5rem;
 }
 
-article .icon{
+article.icon{
     cursor:default;
+
 }
 
 /*PROJECT SECTION*/
@@ -410,3 +407,4 @@ footer{
 footer p {
     text-align: center;
 }
+
