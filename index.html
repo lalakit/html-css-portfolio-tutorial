@@ -10,11 +10,6 @@
         </script>
         <style>
             /* Basic reset */
-            * {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-            }
         
             body, html {
               height: 100%;
@@ -26,7 +21,7 @@
               position: relative;
               height: 100vh;
               background: linear-gradient(to top, #FF9A8B, #FDCB82, #E5E5E5);
-              overflow: hidden;
+              overflow:scroll;
             }
         
             /* Horizon Line */
@@ -52,37 +47,29 @@
               animation: riseSun 10s ease-in-out forwards;  /* Apply the rising animation */
             }
         
-            /* Keyframe Animation: Sun Rising */
-            @keyframes riseSun {
-              0% {
-                bottom: -100px;  /* Start below the horizon */
-                opacity: 0;  /* Sun starts invisible */
-              }
-              50% {
-                bottom: 50%; /* Halfway up, sun rises */
-                opacity: 1; /* Sun becomes visible */
-              }
-              100% {
-                bottom: 60%; /* Sun reaches the top of the sky */
-              }
-            }
           </style>
     </head>
     <body>
         <div class="sky">
         <nav id = "desktop-nav">
-            <div class="logo">Laetitia Kitissou</div>
+            <div class="logo"> 
+                <img src="lalakit_pic.png" alt="lalakit_me" style="border-radius: 50%; width: 15%; height: 15%;"> 
+                Laetitia Kitissou
+            </div>
             <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
             </div>
         </nav>
         <nav id="hamburger-nav">
-            <div class="logo">Laetitia Kitissou</div>
+            <div class="logo">
+                <img src="lalakit_pic.png" alt="lalakit_me" style="border-radius: 50%; width: 20%; height: 20%;"> 
+            </div>
+          
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -91,9 +78,9 @@
                 </div>
                 <div class="menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
+                    <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>  
                 </div>
             </div>
         </nav>
@@ -104,7 +91,7 @@
             <div class="section__text">
                 <p class ="section__text__p1">Hello, I'm</p>
                 <h1 class="title">Laetitia Kitissou</h1>
-                <p class="section__text__p2">Continious Learner and developer</p>
+                <p class="section__text__p2">Continious Learner and Developer</p>
                 <div class="btn-container">
                     <button 
                     class="btn btn-color-2" 
