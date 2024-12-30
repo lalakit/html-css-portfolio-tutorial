@@ -6,9 +6,70 @@
         <title>My portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mediaqueries.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js">            
+        </script>
+        <style>
+            /* Basic reset */
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+        
+            body, html {
+              height: 100%;
+              font-family: Arial, sans-serif;
+            }
+        
+            /* Sky Background with Gradient for Sunrise */
+            .sky {
+              position: relative;
+              height: 100vh;
+              background: linear-gradient(to top, #FF9A8B, #FDCB82, #E5E5E5);
+              overflow: hidden;
+            }
+        
+            /* Horizon Line */
+            .horizon {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 10%;
+              background-color: #34495e;
+            }
+        
+            /* Sun Element */
+            .sun {
+              position: absolute;
+              bottom: -100px;  /* Start below the horizon */
+              left: 50%;
+              transform: translateX(-50%);
+              width: 150px;
+              height: 150px;
+              background-color: #f39c12;
+              border-radius: 50%;
+              box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+              animation: riseSun 10s ease-in-out forwards;  /* Apply the rising animation */
+            }
+        
+            /* Keyframe Animation: Sun Rising */
+            @keyframes riseSun {
+              0% {
+                bottom: -100px;  /* Start below the horizon */
+                opacity: 0;  /* Sun starts invisible */
+              }
+              50% {
+                bottom: 50%; /* Halfway up, sun rises */
+                opacity: 1; /* Sun becomes visible */
+              }
+              100% {
+                bottom: 60%; /* Sun reaches the top of the sky */
+              }
+            }
+          </style>
     </head>
     <body>
+        <div class="sky">
         <nav id = "desktop-nav">
             <div class="logo">Laetitia Kitissou</div>
             <div>
@@ -269,8 +330,8 @@
                 </div>
             </nav>
             <p>Copyright &#169; 2024 Laetitia Kitissou. All Rights Reserverd.</p>
-
         </footer>
         <script src="script.js"></script>
+        </div>
     </body>
 </html>
